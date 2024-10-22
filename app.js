@@ -43,7 +43,7 @@ require('dotenv').config();
                     const qs = new url.URL(req.url, 'http://localhost:3000').searchParams;
                     const code = qs.get('code');
 
-                    res.redirect('http://localhost:3000');
+                    res.redirect('Authentication successful! You can close this window.');
                     
 
                     oAuth2Client.getToken(code, (err, token) => {
