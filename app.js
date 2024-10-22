@@ -1,8 +1,8 @@
 const { google } = require('googleapis');
 const http = require('http');
 const url = require('url');
-const destroyer = require('server-destroy'); // To easily stop the server once done
 const fs = require('fs');
+require('dotenv').config();
 
 // Use dynamic import if ESM features are required
 (async () => {
@@ -22,7 +22,7 @@ const fs = require('fs');
             process.env.CLIENT_ID,
             process.env.CLIENT_SECRET,
             'http://localhost:3000/oauth2callback'
-          );
+        );
 
         let token;
 
@@ -43,8 +43,8 @@ const fs = require('fs');
                     const qs = new url.URL(req.url, 'http://localhost:3000').searchParams;
                     const code = qs.get('code');
 
-                    res.end('Authentication successful! You can close this window.');
-                    server.destroy();
+                    res.redirect('http://localhost:3000');
+                    
 
                     oAuth2Client.getToken(code, (err, token) => {
                         if (err) return reject(err);
@@ -58,7 +58,6 @@ const fs = require('fs');
                 open(authUrl);
             });
 
-            destroyer(server);
         });
     }
 
