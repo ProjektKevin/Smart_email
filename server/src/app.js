@@ -1,7 +1,5 @@
 // INCLUDES
 const express = require('express');
-const mainRoutes = require('./routes/sendEmailRoute.js');
-
 
 // CREATE APP
 const app = express();
@@ -15,10 +13,12 @@ app.get('/', (req, res) => {
     const test = 123;
     res.send('I am Alive!')
 });
-app.use("/api", mainRoutes);
+
+// routes
+const mainRoutes = require("./routes/mainRoute");
 
 // SETUP STATIC FILES
-app.use("/", express.static('public'));
+app.use("/api", mainRoutes);
 
 // EXPORT APP
 module.exports = app;
