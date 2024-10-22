@@ -56,15 +56,15 @@
     display: flex;
     justify-content: center;  /* Center content horizontally */
     align-items: center;      /* Align items vertically */
-    background-color: #007bff;
+    background-color: #5bcfdc;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
-    gap: 8px;  /* Space between icon and text */
+    gap: 12px;  /* Space between icon and text */
 }
 
 .send-button img {
@@ -73,5 +73,5 @@
 }
 
 .send-button:hover {
-    background-color: #0056b3;
+    background-color: #5bcfdc;
 }
