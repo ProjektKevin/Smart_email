@@ -1,20 +1,20 @@
 .tabs {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .tabs button {
     background: none;
     border: none;
     font-size: 18px;
-    color: #16222a;
+    color: #FFFFFF;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 .tabs button.active {
-    background-color: #16222a;
+    background-color: #0044b1;
     color: white;
     border-radius: 5px 5px 0 0;
 }
