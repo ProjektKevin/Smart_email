@@ -2,3 +2,5 @@
 # .gitignore
 credentials.json
 token.json
+.env
+node_modules/

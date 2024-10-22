@@ -1,0 +1,77 @@
+/* Container holding the form */
+.email-container {
+    display: flex;
+    justify-content: flex-end; /* Align the form to the right side */
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0; /* Light background color for the container */
+}
+
+/* Styling the email form */
+.email-form {
+    background-color: #16222a; /* Darker background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+.email-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Text area styles */
+.text-area {
+    margin-bottom: 15px;
+}
+
+.text-area textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 120px;
+}
+
+/* Send button styles */
+.send-button {
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Align items vertically */
+    background-color: #5bcfdc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    gap: 12px;  /* Space between icon and text */
+}
+
+.send-button img {
+    width: 20px;   /* Resize the icon */
+    height: 20px;  /* Keep aspect ratio */
+}
+
+.send-button:hover {
+    background-color: #5bcfdc;
+}
