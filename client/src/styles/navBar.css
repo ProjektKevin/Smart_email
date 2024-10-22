@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+  }
+  
+  .nav-tabs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-tabs li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .auth-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
