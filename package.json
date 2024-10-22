@@ -12,6 +12,9 @@
     "@google/generative-ai": "^0.21.0",
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "googleapis": "^144.0.0",
+    "open": "^10.1.0",
+    "server-destroy": "^1.0.1"
   }
 }
