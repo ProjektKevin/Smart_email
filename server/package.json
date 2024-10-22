@@ -7,5 +7,10 @@
   },
   "author": "Win Moe Oo",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "nodemailer": "^6.9.15"
+  }
 }
