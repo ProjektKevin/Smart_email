@@ -5,50 +5,57 @@
     padding: 20px;
     height: 100vh; /* Full height of the viewport */
     background-color: #f0f0f0; /* Light background color for the container */
+    box-sizing: border-box; /* Ensure padding is included in the container's width */
 }
 
 /* Styling the email form */
 .email-form {
     background-color: #16222a; /* Darker background for the form */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 500px;
+    padding: 40px; /* Increased padding for more space inside the form */
+    border-radius: 12px; /* Slightly more rounded corners */
+    max-width: 70%; /* Make the form wider */
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for separation */
     color: white;
     font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't affect max-width */
 }
 
 /* Heading style */
 .email-form h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 24px; /* Increase heading size */
 }
 
 /* Input field styles */
 .input-field {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased spacing between fields */
 }
 
 .input-field input {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px; /* Larger padding for bigger input fields */
+    border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #f9f9f9; /* Light background for input fields */
+    color: #333; /* Darker text for better contrast */
 }
 
 /* Text area styles */
 .text-area {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .text-area textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 16px;
-    height: 120px;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 150px; /* Increased height for more typing space */
 }
 
 /* Send button styles */
@@ -56,22 +63,23 @@
     display: flex;
     justify-content: center;  /* Center content horizontally */
     align-items: center;      /* Align items vertically */
-    background-color: #007bff;
+    background-color: #5bcfdc;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px; /* Larger padding for a bigger button */
+    border-radius: 6px; /* Slightly rounder corners */
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    gap: 8px;  /* Space between icon and text */
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for hover effect */
+    gap: 12px;  /* Space between icon and text */
 }
 
 .send-button img {
-    width: 20px;   /* Resize the icon */
-    height: 20px;  /* Keep aspect ratio */
+    width: 22px;   /* Slightly larger icon */
+    height: 22px;  /* Keep aspect ratio */
 }
 
 .send-button:hover {
-    background-color: #0056b3;
+    background-color: #50b5c7; /* Darker shade of the button color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
 }

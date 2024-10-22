@@ -2,6 +2,7 @@ const { google } = require('googleapis');
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
+require('dotenv').config();
 
 // Use dynamic import if ESM features are required
 (async () => {
@@ -42,8 +43,8 @@ const fs = require('fs');
                     const qs = new url.URL(req.url, 'http://localhost:3000').searchParams;
                     const code = qs.get('code');
 
-                    res.end('Authentication successful! You can close this window.');
-                    server.close(); // Manually close the server
+                    res.redirect('http://localhost:3000');
+                    
 
                     oAuth2Client.getToken(code, (err, token) => {
                         if (err) return reject(err);
