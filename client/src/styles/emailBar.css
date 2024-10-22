@@ -1,0 +1,68 @@
+/* Container for the email list */
+.email-bar {
+    width: 100%;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Each individual email item */
+  .email-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .email-item:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styling for unread and read emails */
+  .email-item.unread {
+    font-weight: bold;
+  }
+  
+  .email-item.read {
+    font-weight: normal;
+    color: #777;
+  }
+  
+  /* Sender section */
+  .email-sender {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Information section containing subject and snippet */
+  .email-info {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .email-subject {
+    margin-right: 10px;
+  }
+  
+  .email-snippet {
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Date section */
+  .email-date {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+  }
+  
