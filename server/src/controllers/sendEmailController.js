@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 module.exports.sendEmail = (req, res, next) => {
+    console.log()
     try {
         console.log('I am here 0');
         const { email, subject, message } = req.body;

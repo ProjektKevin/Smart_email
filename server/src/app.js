@@ -1,6 +1,6 @@
 // INCLUDES
 const express = require('express');
-const mainRoutes = require('./routes/sendEmailRoute.js');
+const mainRoutes = require('./routes/mainRoutes.js');
 
 
 // CREATE APP
