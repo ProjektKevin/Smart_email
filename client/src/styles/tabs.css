@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: 5px;
+    background-color: #16222a
 }
 
 .tabs button {
