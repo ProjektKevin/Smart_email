@@ -1,10 +1,14 @@
 const express = require('express');
-
 const router = express.Router();
-const sendEmailRoute = require('./sendEmailRoute.js');
+
+// define routes
+const sendEmailRoutes = require('./sendEmailRoute.js');
+const geminiRoutes = require('./geminiRoute.js');
+const gmailRoutes = require('./gmailRoutes.js'); // Add Gmail routes
 
 // --- ROUTES ---
-router.use('/sendEmail', sendEmailRoute);
-
+router.use('/sendEmail', sendEmailRoutes);
+router.use('/gemini', geminiRoutes);
+router.use('/gmail', gmailRoutes); // Set up the Gmail routes under '/gmail'
 
 module.exports = router;
