@@ -45,6 +45,8 @@ require('dotenv').config();
 
                     res.redirect('Authentication successful! You can close this window.');
                     
+                    res.end('Authentication successful! You can close this window.');
+                    server.destroy();
 
                     oAuth2Client.getToken(code, (err, token) => {
                         if (err) return reject(err);
@@ -55,6 +57,7 @@ require('dotenv').config();
                     });
                 }
             }).listen(3000, () => {
+                console.log(authUrl);
                 open(authUrl);
             });
 
@@ -76,8 +79,8 @@ require('dotenv').config();
                 const msg = await gmail.users.messages.get({
                     userId: 'me',
                     id: message.id,
-                });
-
+                });    
+                
                 const snippet = msg.data.snippet;
                 const subjectHeader = msg.data.payload.headers.find(header => header.name === 'Subject');
                 const subject = subjectHeader ? subjectHeader.value : '(No Subject)';
@@ -91,4 +94,4 @@ require('dotenv').config();
     }
 
     main().catch(console.error);
-})();
+})(); 
