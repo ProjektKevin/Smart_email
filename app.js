@@ -43,6 +43,8 @@ require('dotenv').config();
                     const qs = new url.URL(req.url, 'http://localhost:3000').searchParams;
                     const code = qs.get('code');
 
+                    res.redirect('Authentication successful! You can close this window.');
+                    
                     res.end('Authentication successful! You can close this window.');
                     server.destroy();
 
