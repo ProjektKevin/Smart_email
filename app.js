@@ -2,6 +2,7 @@ const { google } = require('googleapis');
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
+require('dotenv').config();
 
 // Use dynamic import if ESM features are required
 (async () => {
@@ -43,7 +44,7 @@ const fs = require('fs');
                     const code = qs.get('code');
 
                     res.end('Authentication successful! You can close this window.');
-                    server.close(); // Manually close the server
+                    server.destroy();
 
                     oAuth2Client.getToken(code, (err, token) => {
                         if (err) return reject(err);
@@ -57,6 +58,7 @@ const fs = require('fs');
                 console.log(authUrl);
                 open(authUrl);
             });
+
         });
     }
 

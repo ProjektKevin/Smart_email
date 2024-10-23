@@ -1,0 +1,72 @@
+/* Container for the email list with dark background */
+.email-bar {
+    width: 100%;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background-color: #16222a; /* Dark background */
+    color: #e0e0e0; /* Light text for overall contrast */
+}
+
+/* Each individual email item */
+.email-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #333; /* Darker border between items */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #e0e0e0; /* Light text color */
+}
+
+.email-item:hover {
+    background-color: #292929; /* Slightly lighter background on hover */
+}
+
+/* Styling for unread and read emails */
+.email-item.unread {
+    font-weight: bold;
+    color: #ffffff; /* White for unread emails */
+}
+
+.email-item.read {
+    font-weight: normal;
+    color: #888888; /* Grey for read emails */
+}
+
+/* Sender section */
+.email-sender {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f0f0f0; /* Bright text for sender */
+}
+
+/* Information section containing subject and snippet */
+.email-info {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    color: #cccccc; /* Light grey for email details */
+}
+
+.email-subject {
+    margin-right: 10px;
+    color: #e0e0e0; /* Light text for subject */
+}
+
+.email-snippet {
+    color: #999999; /* Slightly darker grey for snippet */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Date section */
+.email-date {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    color: #888888; /* Grey for date */
+}
