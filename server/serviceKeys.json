@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "scenic-adapter-439405-a4",
+    "private_key_id": "ced609f65c251bff96ae67d8e21feea512875632",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYdd9z6ty5Vobc\n4szsOKOkyyjmMDNkwqwEs81f/Kmn++V+mW+/nMn/juaVvGfROF8XdlcBmkkqJqXr\nB88tkHSZI7gMWMTJzR9wV+6UGitTWVZ3p9e+tvChK449qh8OyP4WmKnGENYCiJ+V\nIdU86OTNh+sAIURXrENKHPK1xpiM/GVGBU56+0mVCJbNISM4+qbpANBTErxQr9eu\ngSkaFehWBDKeoARu0c5/0yDCh3+3zIFV3B5r+LsS1OSTn6dBKwYOimE2EgyZ2FdY\ngOT7MW4ZJkrvq/z42HnXI8hFapAgJ/yQCHKNgxpeR4KftgTfhUxtkAIcr5Tji7Pi\nTzT26ONrAgMBAAECggEAMnQPlpTKpqrzxnVny2STAx4YUtTwrQ+fTY8TEAjVPDoo\nIFU2nfqM/n2T4UmQMbSuA12uPWGJhOF1VuomrbV4YJVpeuyFcyLmnI787RYb8GFI\nNCDfTMXNrAh18gIydPoe2+t5g4peyEfeR8QChT2tOjcYldpse3cObaBW0cD/CuiY\nzbgdQIIQIJtxPXP4b5I+khmqsVvluZx641gWQ+K2q2z5mJMXrnr7BcmYRa0x2VS4\nHAv4hYj0QEyvVmIKc+tddvwm/z4pW3QTEiPngypiftYrdy3rj3SUnv0afSuQIeXo\nvTHUZzXgxmMgVhMB67tQ1C8OA38JVCueA9DQ6H4ZAQKBgQDP4Xwed0neps4cOuMV\nRvABZP6rnR8tpTSmFBC8V3UoPDQHKYn5snqUWuRryRZTjUKnhYDwnE/Hj5gIjKfT\ndhDKQSBzvawHTwEylfgxauzpc383kTHwXYBU+lnB3AmHemJj8KrcymbWu1tCknE8\nl3S5vQCsrAgIZgCn0BlwXWTe2wKBgQC7wE+lAYd7tSaIQMg7Co/QnnIs4/SbWlb5\nUzQo0XEgoV8sDYkOBa52ed1y+fGyjr7nTvBTF+GuwLNfoGaVfltHlBNb6de1GiUQ\n2zE9WRkboFtQx6fQxORTF1DCZScV5dGOw+EzoxJZZkCvj0Jr8ZlxXJzn3vvRYvMt\ngY6SKJbKsQKBgQC3teCXl/oLL0SExDG8svUVdmhtxywvjYlKn/7uQygBR7r+/WG2\n7ljP1Md6zbnSWssl+qCpgqoqhSbpn0wNX5CU/RstzdhCmTpItyogmgsGgJBTzhfh\nAPCRqLE71jYBqVFcWurUtnZNnEOZQIub7Yk1P+dhsaJjsakwpIJmv9KN8wKBgQCF\ndFUofMXI8SLKhwHMtd0z9OxDbGVaaASahMH2oalAAHSd46EgDnnMTSNTrsZWnZCk\n6j95UOhiRyc5OdKxQHexkVeRZc6mNEdUi/mcGdD3CizeZoyqoMmLJm+JPk1iC1HB\noQpaofdRBJXGNJaKE9l18ta1GpL0atlf509oJOHKgQKBgCkWFTdGrXCWHpYyOvdP\n2KSC9ZhEKy8QVt5ZMPL/b2EVvCSQy1Kr1emuHEu2mCdzDSDB0mq1MdcNO6A/0+rf\nEUr+7fRngd2bDD+6w0874xCDhNL4ydLpWXG2TLs0NTrhNxZ2VbeFFCM7YNxR1Dty\np67aWXIc5fV/sI6X74qpROUX\n-----END PRIVATE KEY-----\n",
+    "client_email": "smart-email@scenic-adapter-439405-a4.iam.gserviceaccount.com",
+    "client_id": "106370613537214919067",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smart-email%40scenic-adapter-439405-a4.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+}
+  

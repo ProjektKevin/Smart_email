@@ -1,7 +1,6 @@
 const { google } = require('googleapis');
 const http = require('http');
 const url = require('url');
-const destroyer = require('server-destroy'); // To easily stop the server once done
 const fs = require('fs');
 
 // Use dynamic import if ESM features are required
@@ -22,7 +21,7 @@ const fs = require('fs');
             process.env.CLIENT_ID,
             process.env.CLIENT_SECRET,
             'http://localhost:3000/oauth2callback'
-          );
+        );
 
         let token;
 
@@ -44,7 +43,7 @@ const fs = require('fs');
                     const code = qs.get('code');
 
                     res.end('Authentication successful! You can close this window.');
-                    server.destroy();
+                    server.close(); // Manually close the server
 
                     oAuth2Client.getToken(code, (err, token) => {
                         if (err) return reject(err);
@@ -55,10 +54,9 @@ const fs = require('fs');
                     });
                 }
             }).listen(3000, () => {
+                console.log(authUrl);
                 open(authUrl);
             });
-
-            destroyer(server);
         });
     }
 
@@ -77,8 +75,8 @@ const fs = require('fs');
                 const msg = await gmail.users.messages.get({
                     userId: 'me',
                     id: message.id,
-                });
-
+                });    
+                
                 const snippet = msg.data.snippet;
                 const subjectHeader = msg.data.payload.headers.find(header => header.name === 'Subject');
                 const subject = subjectHeader ? subjectHeader.value : '(No Subject)';
@@ -92,4 +90,4 @@ const fs = require('fs');
     }
 
     main().catch(console.error);
-})();
+})(); 
