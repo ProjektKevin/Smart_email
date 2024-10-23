@@ -7,4 +7,4 @@ const router = express.Router();
 router.post('/', sendEmailController.sendEmail);
 
 
-module.exports = express;
+module.exports = router;

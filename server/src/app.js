@@ -1,6 +1,8 @@
 // INCLUDES
 const express = require('express');
+const mainRoutes = require('./routes/sendEmailRoute.js');
 require('dotenv').config(); // Load environment variables
+
 
 // CREATE APP
 const app = express();
