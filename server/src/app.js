@@ -1,6 +1,6 @@
 // INCLUDES
 const express = require('express');
-const mainRoutes = require('./routes/sendEmailRoute.js');
+const mainRoutes = require('./routes/sendEmailRoutes.js');
 require('dotenv').config(); // Load environment variables
 
 
@@ -16,8 +16,6 @@ app.get('/', (req, res) => {
     res.send('I am Alive!');
 });
 
-// routes
-const mainRoutes = require('./routes/mainRoute'); // Updated main routes
 
 // SETUP STATIC FILES
 app.use('/api', mainRoutes); // All routes under '/api'
